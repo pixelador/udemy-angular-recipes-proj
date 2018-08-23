@@ -9,7 +9,11 @@
     <hr>
     <div class="row">
       <div class="col-xs-12">
-          <app-shopping-list-ingredient></app-shopping-list-ingredient>
+        <ul class="list-group">
+          <li class="list-group-item" *ngFor="let ingredient of ingredients">
+            <a href="#">{{ ingredient.name }} ({{ ingredient.amount }})</a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
